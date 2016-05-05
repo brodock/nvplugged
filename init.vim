@@ -23,6 +23,12 @@ Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-rails'
 Plug 'thoughtbot/vim-rspec'
 
+" Autocomplete (requires python 3)
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline-themes'
@@ -46,6 +52,9 @@ let g:sudo_no_gui=1
 colorscheme gruvbox
 set background=dark
 
+" Autocomplete
+let g:deoplete#enable_at_startup = 1
+
 "
 " Other customizations put in ~/.config/nvim/custom
 "
@@ -54,4 +63,5 @@ let s:path = expand('<sfile>:p:h')
 exe 'source ' . s:path . '/custom/defaults.vim'
 exe 'source ' . s:path . '/custom/nerdtree.vim'
 exe 'source ' . s:path . '/custom/strip-whitespaces.vim'
+
 
