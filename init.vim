@@ -55,6 +55,9 @@ set background=dark
 " Autocomplete
 let g:deoplete#enable_at_startup = 1
 
+" System clipboard integration
+set clipboard=unnamed
+
 "
 " Other customizations put in ~/.config/nvim/custom
 "
