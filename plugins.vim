@@ -16,10 +16,9 @@ Plug 'rking/ag.vim'
 Plug 'benekastah/neomake'
 
 " Languages support
-Plug 'tpope/vim-haml'
-Plug 'tpope/vim-haml'
-Plug 'tpope/vim-cucumber'
-Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-haml', { 'for': 'haml' }
+Plug 'tpope/vim-cucumber', { 'for': 'cucumber' }
+Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'tpope/vim-rails'
 Plug 'thoughtbot/vim-rspec'
 
