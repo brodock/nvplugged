@@ -5,6 +5,10 @@ call plug#begin(s:path . '/plugged')
 exe 'source ' . s:path . '/plugins.vim'
 call plug#end()
 
+" Core Functions and Framework
+exe 'source ' . s:path . '/custom/plugged.vim'
+exe 'source ' . s:path . '/custom/janus.vim'
+
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
