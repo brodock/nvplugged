@@ -3,6 +3,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " NERDtree customizations from Janus
 
+" Default mapping, <leader>n
+call janus#add_mapping('nerdtree', 'map', '<leader>n', ':NERDTreeToggle<CR> :NERDTreeMirror<CR>')
+
+let NERDTreeIgnore=['\.pyc$', '\.pyo$', '\.rbc$', '\.rbo$', '\.class$', '\.o$', '\~$']
+
 augroup AuNERDTreeCmd
 autocmd AuNERDTreeCmd VimEnter * call s:CdIfDirectory(expand("<amatch>"))
 autocmd AuNERDTreeCmd FocusGained * call s:UpdateNERDTree()
