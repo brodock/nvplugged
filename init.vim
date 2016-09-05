@@ -25,7 +25,7 @@ set background=dark
 let g:deoplete#enable_at_startup = 1
 
 " System clipboard integration
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 "
 " Other customizations put in ~/.config/nvim/custom
