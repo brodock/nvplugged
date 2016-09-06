@@ -14,6 +14,7 @@ Plug 'ddollar/nerdcommenter'
 Plug 'tpope/vim-eunuch'
 Plug 'rking/ag.vim'
 Plug 'benekastah/neomake'
+Plug 'scrooloose/syntastic'
 
 " Languages support
 Plug 'tpope/vim-haml', { 'for': 'haml' }
