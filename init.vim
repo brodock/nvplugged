@@ -9,6 +9,8 @@ call plug#end()
 exe 'source ' . s:path . '/custom/plugged.vim'
 exe 'source ' . s:path . '/custom/janus.vim'
 
+" Core customizations
+exe 'source ' . s:path . '/custom/defaults.vim'
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -32,10 +34,11 @@ let g:deoplete#enable_at_startup = 1
 set clipboard=unnamedplus
 
 "
-" Other customizations put in ~/.config/nvim/custom
+" Other customizations put in any of the below:
+" ~/.config/nvim/custom
+" ~/.config/nvim/custom/plugins
 "
 
-exe 'source ' . s:path . '/custom/defaults.vim'
 exe 'source ' . s:path . '/custom/plugins/nerdtree.vim'
 exe 'source ' . s:path . '/custom/strip-whitespaces.vim'
 
