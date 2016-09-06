@@ -36,6 +36,6 @@ set clipboard=unnamedplus
 "
 
 exe 'source ' . s:path . '/custom/defaults.vim'
-exe 'source ' . s:path . '/custom/nerdtree.vim'
+exe 'source ' . s:path . '/custom/plugins/nerdtree.vim'
 exe 'source ' . s:path . '/custom/strip-whitespaces.vim'
 

@@ -5,8 +5,6 @@
 "
 " @param [String] The plugin name
 function! plugged#is_plugin_enabled(name)
-  let plug = g:plugs[a:name]
-
-  return has_key(plug, 'on')
+  return has_key(g:plugs, a:name) && has_key(g:plugs[a:name], 'on')
 endfunction
 

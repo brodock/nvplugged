@@ -21,3 +21,11 @@ function! janus#add_mapping(name, mapping_command, mapping_keys, ...)
   let mapping_list = [a:mapping_command, a:mapping_keys, mapping_command]
   exe join(mapping_list)
 endfunction
+
+" Check if plugin is enabled (COMPATIBILITY MODE)
+" You should use plugged#is_plugin_enabled instead.
+"
+" @param [String] The plugin name
+function! janus#is_plugin_enabled(name)
+  return plugged#is_plugin_enabled(a:name)
+endfunction
