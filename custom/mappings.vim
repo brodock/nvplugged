@@ -52,6 +52,11 @@ nmap <leader>hs :set hlsearch! hlsearch?<CR>
 " Adjust viewports to the same size
 map <Leader>= <C-w>=
 
+if has("nvim")
+  " Use ESC to exit terminal mode
+  tnoremap <Esc> <C-\><C-n>
+endif
+
 if has("gui_macvim") && has("gui_running")
   " Map command-[ and command-] to indenting or outdenting
   " while keeping the original selection in visual mode
