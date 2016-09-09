@@ -23,7 +23,7 @@ Plug 'tpope/vim-haml', { 'for': 'haml' }
 Plug 'tpope/vim-cucumber', { 'for': 'cucumber' }
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'tpope/vim-rails'
-Plug 'skalnik/vim-vroom'
+Plug 'brodock/vim-vroom', { 'branch': 'neovim-terminal' }
 Plug 'thoughtbot/vim-rspec'
 
 " Autocomplete (requires python 3)
