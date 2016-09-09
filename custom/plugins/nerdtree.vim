@@ -14,7 +14,7 @@ if janus#is_plugin_enabled("nerdtree")
   autocmd AuNERDTreeCmd FocusGained * call s:UpdateNERDTree()
 
   " If the parameter is a directory, cd into it
-  function s:CdIfDirectory(directory)
+  function! s:CdIfDirectory(directory)
     let explicitDirectory = isdirectory(a:directory)
     let directory = explicitDirectory || empty(a:directory)
 
@@ -40,7 +40,7 @@ if janus#is_plugin_enabled("nerdtree")
   endfunction
 
   " NERDTree utility function
-  function s:UpdateNERDTree(...)
+  function! s:UpdateNERDTree(...)
     let stay = 0
 
     if(exists("a:1"))
