@@ -9,6 +9,9 @@ call plug#end()
 exe 'source ' . s:path . '/custom/plugged.vim'
 exe 'source ' . s:path . '/custom/janus.vim'
 
+" Personal customizations
+exe 'source ' . s:path . '/custom/personal_settings.vim'
+
 " Core customizations
 exe 'source ' . s:path . '/custom/defaults.vim'
 exe 'source ' . s:path . '/custom/mappings.vim'
@@ -52,4 +55,3 @@ exe 'source ' . s:path . '/custom/plugins/fugitive.vim'
 exe 'source ' . s:path . '/custom/plugins/syntastic.vim'
 exe 'source ' . s:path . '/custom/plugins/fzf.vim'
 exe 'source ' . s:path . '/custom/strip-whitespaces.vim'
-

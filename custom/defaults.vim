@@ -8,7 +8,9 @@ set mouse=a           " Enable all mouse interactions
 "" Whitespace
 ""
 
-set nowrap                        " don't wrap lines
+set laststatus=2
+set cul                           " Highlight the line the cursor is on (local to window)
+set wrap                          " don't wrap lines
 set tabstop=2                     " a tab is two spaces
 set shiftwidth=2                  " an autoindent (with <<) is two spaces
 set expandtab                     " use spaces, not tabs

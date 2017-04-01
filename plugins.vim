@@ -27,6 +27,7 @@ Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'tpope/vim-rails'
 Plug 'brodock/vim-vroom', { 'branch': 'neovim-terminal' }
 Plug 'thoughtbot/vim-rspec'
+Plug 'derekwyatt/vim-scala'
 
 " Autocomplete (requires python 3) - make sure you run before installing : pip3 install --upgrade neovim
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
