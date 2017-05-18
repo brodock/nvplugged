@@ -28,7 +28,7 @@ let g:loaded_netrwPlugin  = 1
 let g:sudo_no_gui=1
 
 " Theme activation
-"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 colorscheme gruvbox
 set background=dark
 
