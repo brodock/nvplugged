@@ -57,3 +57,6 @@ map <leader>f :CtrlP<cr>
 
 " select all
 map <C-a> <esc>ggVG<CR>
+
+" set syntax highlighting for thor files
+autocmd BufNewFile, BufRead *.thor set syntax=ruby
