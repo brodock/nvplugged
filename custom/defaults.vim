@@ -2,6 +2,7 @@
 set number            " Show line numbers
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
+set mouse=a           " Enable all mouse interactions
 
 ""
 "" Whitespace
