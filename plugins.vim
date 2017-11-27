@@ -35,3 +35,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline-themes'
+
+" Custom
+Plug 'udalov/kotlin-vim'
+Plug 'brooth/far.vim'
