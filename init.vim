@@ -16,10 +16,6 @@ exe 'source ' . s:path . '/custom/personal_settings.vim'
 exe 'source ' . s:path . '/custom/defaults.vim'
 exe 'source ' . s:path . '/custom/mappings.vim'
 
-" Airline
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-
 " Disable netrw /
 let g:loaded_netrw        = 1
 let g:loaded_netrwPlugin  = 1
@@ -29,7 +25,8 @@ let g:sudo_no_gui=1
 
 " Theme activation
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-colorscheme gruvbox
+colorscheme NeoSolarized
+set termguicolors
 set background=dark
 
 " Autocomplete

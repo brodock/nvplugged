@@ -53,7 +53,7 @@ else
   map <C-l> <C-w>l
 endif
 
-map <leader>f :CtrlP<cr>
+map <leader>f :FZF<cr>
 
 " select all
 map <C-a> <esc>ggVG<CR>
