@@ -9,13 +9,12 @@ call plug#end()
 exe 'source ' . s:path . '/custom/plugged.vim'
 exe 'source ' . s:path . '/custom/janus.vim'
 
+" Personal customizations
+exe 'source ' . s:path . '/custom/personal_settings.vim'
+
 " Core customizations
 exe 'source ' . s:path . '/custom/defaults.vim'
 exe 'source ' . s:path . '/custom/mappings.vim'
-
-" Airline
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
 
 " Disable netrw /
 let g:loaded_netrw        = 1
@@ -25,8 +24,9 @@ let g:loaded_netrwPlugin  = 1
 let g:sudo_no_gui=1
 
 " Theme activation
-"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-colorscheme gruvbox
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+colorscheme NeoSolarized
+set termguicolors
 set background=dark
 
 " Autocomplete
@@ -52,4 +52,3 @@ exe 'source ' . s:path . '/custom/plugins/fugitive.vim'
 exe 'source ' . s:path . '/custom/plugins/syntastic.vim'
 exe 'source ' . s:path . '/custom/plugins/fzf.vim'
 exe 'source ' . s:path . '/custom/strip-whitespaces.vim'
-
