@@ -6,6 +6,11 @@
 nmap <silent> <F4> :set invpaste<CR>:set paste?<CR>
 imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
 
+" Copy to external clipboard
+nmap <leader>Y "*Y
+vmap <leader>y "*y
+vmap <leader>Y "*Y
+
 " format the entire file
 nnoremap <leader>fef :normal! gg=G``<CR>
 
@@ -158,6 +163,7 @@ else
   map  <C-9> 9gt
   imap <C-9> <Esc>9gt
 endif
+
 
 ""
 "" Command-Line Mappings

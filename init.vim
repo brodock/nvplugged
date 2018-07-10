@@ -32,9 +32,6 @@ set background=dark
 " Autocomplete
 let g:deoplete#enable_at_startup = 1
 
-" System clipboard integration
-set clipboard=unnamedplus
-
 " Execute Vroom with :terminal when in NeoVim
 if has('nvim')
   let g:vroom_use_terminal=1
