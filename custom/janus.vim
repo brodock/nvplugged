@@ -1,4 +1,4 @@
-" Few functinos backported from janus to make easy to port their customizations
+" Few functions backported from janus to make easy to port their customizations
 "------------------------------------------------------------------------------
 
 " Mapping function
