@@ -30,8 +30,10 @@ Plug 'brodock/vim-vroom', { 'branch': 'neovim-terminal' }
 Plug 'thoughtbot/vim-rspec'
 
 " Autocomplete (requires python 3) - make sure you run before installing : pip3 install --upgrade neovim
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'fishbullet/deoplete-ruby'
+if has("python3")
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'fishbullet/deoplete-ruby'
+endif
 
 " Themes
 Plug 'morhetz/gruvbox'
