@@ -64,3 +64,8 @@ set wildignore+=*.swp,*~,._*
 
 set backupdir^=~/.vim/_backup//    " where to put backup files.
 set directory^=~/.vim/_temp//      " where to put swap files.
+
+""
+"" Fugitive and Conflicted
+""
+set diffopt+=vertical " make fugitive open 3 merge columns rather then 3 rows
