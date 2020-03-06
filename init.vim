@@ -29,9 +29,6 @@ let g:sudo_no_gui=1
 colorscheme gruvbox
 set background=dark
 
-" Autocomplete
-let g:deoplete#enable_at_startup = 1
-
 " Execute Vroom with :terminal when in NeoVim
 if has('nvim')
   let g:vroom_use_terminal=1
@@ -48,6 +45,7 @@ exe 'source ' . s:path . '/custom/plugins/nerdcommenter.vim'
 exe 'source ' . s:path . '/custom/plugins/fugitive.vim'
 exe 'source ' . s:path . '/custom/plugins/syntastic.vim'
 exe 'source ' . s:path . '/custom/plugins/fzf.vim'
+exe 'source ' . s:path . '/custom/plugins/deoplete.vim'
 exe 'source ' . s:path . '/custom/strip-whitespaces.vim'
 exe 'source ' . s:path . '/custom/color-columns.vim'
 
