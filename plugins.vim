@@ -27,6 +27,7 @@ Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'tpope/vim-rails'
 Plug 'brodock/vim-vroom', { 'branch': 'neovim-terminal' }
 Plug 'thoughtbot/vim-rspec'
+Plug 'darfink/vim-plist'
 
 " Autocomplete (requires python 3) - make sure you run before installing : pip3 install --upgrade pynvim
 if has("python3")
