@@ -1,7 +1,6 @@
 " Use this file to load any vim-plug enabled extension
 " Make sure you use single quotes
 
-"Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'nvim-neo-tree/neo-tree.nvim', { 'on': 'Neotree' }
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-tree/nvim-web-devicons'
