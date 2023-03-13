@@ -2,6 +2,7 @@ if janus#is_plugin_enabled("neo-tree.nvim")
   " Default mapping, <leader>n
   call janus#add_mapping('neo-tree.nvim', 'map', '<leader>n', ':Neotree toggle<CR>')
   call janus#add_mapping('neo-tree.nvim', 'map', '<leader>b', ':Neotree toggle show buffers right<CR>')
+  call janus#add_mapping('neo-tree.nvim', 'map', '<leader>s', ':Neotree float git_status<CR>')
 
   let g:neo_tree_remove_legacy_commands = 1
 
