@@ -1,6 +1,6 @@
 if janus#is_plugin_enabled("neo-tree.nvim")
   " Default mapping, <leader>n
-  call janus#add_mapping('neo-tree.nvim', 'map', '<leader>n', ':Neotree toggle<CR>')
+  call janus#add_mapping('neo-tree.nvim', 'map', '<leader>n', ':Neotree toggle show<CR>')
   call janus#add_mapping('neo-tree.nvim', 'map', '<leader>b', ':Neotree toggle show buffers right<CR>')
   call janus#add_mapping('neo-tree.nvim', 'map', '<leader>s', ':Neotree float git_status<CR>')
 
@@ -8,6 +8,12 @@ if janus#is_plugin_enabled("neo-tree.nvim")
 
   augroup AuNeoTreeCmd
   autocmd AuNeoTreeCmd VimEnter * call s:CdIfDirectory(expand("<amatch>"))
+
+  lua << EOF
+    require("neo-tree").setup({
+      close_if_last_window = true
+    })
+EOF
 
   " If the parameter is a directory, cd into it
   function! s:CdIfDirectory(directory)

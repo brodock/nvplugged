@@ -1,10 +1,10 @@
 " Use this file to load any vim-plug enabled extension
 " Make sure you use single quotes
 
-Plug 'nvim-neo-tree/neo-tree.nvim', { 'on': 'Neotree' }
-Plug 'nvim-lua/plenary.nvim', { 'on': 'Neotree' }
-Plug 'nvim-tree/nvim-web-devicons', { 'on': 'Neotree' }
-Plug 'MunifTanjim/nui.nvim', { 'on': 'Neotree' }
+Plug 'nvim-lua/plenary.nvim',
+Plug 'nvim-tree/nvim-web-devicons',
+Plug 'MunifTanjim/nui.nvim',
+Plug 'nvim-neo-tree/neo-tree.nvim', { 'branch': 'v2.x' }
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
