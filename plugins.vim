@@ -1,6 +1,7 @@
 " Use this file to load any vim-plug enabled extension
 " Make sure you use single quotes
 
+" NeoTree and dependencies
 Plug 'nvim-lua/plenary.nvim',
 Plug 'nvim-tree/nvim-web-devicons',
 Plug 'MunifTanjim/nui.nvim',
@@ -33,11 +34,14 @@ Plug 'brodock/vim-vroom', { 'branch': 'neovim-terminal' }
 Plug 'thoughtbot/vim-rspec'
 Plug 'darfink/vim-plist'
 
-" Autocomplete (requires python 3) - make sure you run before installing : pip3 install --upgrade pynvim
-if has("python3")
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'fishbullet/deoplete-ruby'
-endif
+" Snippets
+Plug 'garymjr/nvim-snippets'
+
+" Autocomplete
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/nvim-cmp'
+
 
 " Themes
 Plug 'morhetz/gruvbox'
