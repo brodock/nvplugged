@@ -35,13 +35,13 @@ Plug 'thoughtbot/vim-rspec'
 Plug 'darfink/vim-plist'
 
 " Snippets
+Plug 'rafamadriz/friendly-snippets'
 Plug 'garymjr/nvim-snippets'
 
 " Autocomplete
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/nvim-cmp'
-
 
 " Themes
 Plug 'morhetz/gruvbox'
