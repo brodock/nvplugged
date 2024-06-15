@@ -40,6 +40,7 @@ endif
 " ~/.config/nvim/custom/plugins
 "
 
+exe 'source ' . s:path . '/custom/plugins/dashboard-nvim.vim'
 exe 'source ' . s:path . '/custom/plugins/neo-tree.vim'
 exe 'source ' . s:path . '/custom/plugins/nerdcommenter.vim'
 exe 'source ' . s:path . '/custom/plugins/fugitive.vim'
