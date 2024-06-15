@@ -14,7 +14,9 @@ lua <<EOF
     require('dashboard').setup {
       theme = 'hyper',
       config = {
-        header = vim.split(logo, "\n")
+        header = vim.split(logo, "\n"),
+        shortcut = {
+        }
       }
     }
 EOF
