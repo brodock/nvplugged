@@ -16,7 +16,8 @@ lua <<EOF
       config = {
         header = vim.split(logo, "\n"),
         shortcut = {
-        }
+        },
+        packages = { enable = false }
       }
     }
 EOF
